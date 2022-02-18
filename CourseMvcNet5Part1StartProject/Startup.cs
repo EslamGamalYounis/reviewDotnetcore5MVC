@@ -28,7 +28,7 @@ namespace CourseMvcNet5Part1StartProject
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
-                Configuration.GetConnectionString("DefaultConnection")));
+                Configuration.GetConnectionString("WindowsConnection")));
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
